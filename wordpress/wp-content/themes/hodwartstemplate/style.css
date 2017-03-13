@@ -1,0 +1,23 @@
+/*
+ Theme Name:   Hogwarts
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Tema desarrollado para diseño de interfacez
+ Author:       Jaime Molina
+ Author URI:   http://example.com
+ Template:     hodwartstemplate
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  miTema
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('css/animate/animate.css');
+@import url('css/hogwartsStyle.css');
+@import url('css/blogEstilo.css');
+@import url('./fonts/font-awesome-4.7.0/css/font-awesome.css');
+@import url('css/reset.css');
+@import url('css/style-search.css');
+@import url('css/style-frontpage.css');
+

@@ -1,0 +1,17 @@
+[02-Feb-2017 09:00:44 UTC] Error Unknown column 'wp_' in 'field list' de la base de datos de WordPress para la consulta SELECT wp_
+[09-Feb-2017 08:47:38 UTC] PHP Warning:  require_once(template-parts/custompost.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/wordpress/wp-content/themes/hodwartstemplate/functions.php on line 10
+[09-Feb-2017 08:47:38 UTC] PHP Stack trace:
+[09-Feb-2017 08:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/wordpress/wp-admin/post-new.php:0
+[09-Feb-2017 08:47:38 UTC] PHP   2. require_once() /home/ubuntu/workspace/wordpress/wp-admin/post-new.php:10
+[09-Feb-2017 08:47:38 UTC] PHP   3. require_once() /home/ubuntu/workspace/wordpress/wp-admin/admin.php:31
+[09-Feb-2017 08:47:38 UTC] PHP   4. require_once() /home/ubuntu/workspace/wordpress/wp-load.php:37
+[09-Feb-2017 08:47:38 UTC] PHP   5. require_once() /home/ubuntu/workspace/wordpress/wp-config.php:81
+[09-Feb-2017 08:47:38 UTC] PHP   6. include() /home/ubuntu/workspace/wordpress/wp-settings.php:425
+[09-Feb-2017 08:47:38 UTC] PHP Fatal error:  require_once(): Failed opening required 'template-parts/custompost.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/wordpress/wp-content/themes/hodwartstemplate/functions.php on line 10
+[09-Feb-2017 08:47:38 UTC] PHP Stack trace:
+[09-Feb-2017 08:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/wordpress/wp-admin/post-new.php:0
+[09-Feb-2017 08:47:38 UTC] PHP   2. require_once() /home/ubuntu/workspace/wordpress/wp-admin/post-new.php:10
+[09-Feb-2017 08:47:38 UTC] PHP   3. require_once() /home/ubuntu/workspace/wordpress/wp-admin/admin.php:31
+[09-Feb-2017 08:47:38 UTC] PHP   4. require_once() /home/ubuntu/workspace/wordpress/wp-load.php:37
+[09-Feb-2017 08:47:38 UTC] PHP   5. require_once() /home/ubuntu/workspace/wordpress/wp-config.php:81
+[09-Feb-2017 08:47:38 UTC] PHP   6. include() /home/ubuntu/workspace/wordpress/wp-settings.php:425

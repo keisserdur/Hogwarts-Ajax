@@ -1,0 +1,1 @@
+Estamos en 404.php

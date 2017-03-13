@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Back-end admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/vendor/reset.css" type="text/css" />
+    <link rel="stylesheet" href="estilo/admin.css" type="text/css" />
+    <link rel="stylesheet" href="estilo/Hover-master/css/hover.css" type="text/css" />
+    <link rel="stylesheet" href="estilo/style-form.css" type="text/css" />
+  </head>
+  <body>
+    <noscript>
+      <div class="alert">
+        <h2>Es necesario tener activcado javascript en el navegador</h2>
+      </div>
+    </noscript>
+    <section class="wrapper">
+      <div id="login">
+         <input id="nick_login" type="text" placeholder="Nick name">
+         <input id="pass_login" type="password" placeholder="Password">
+         <button id="dologin">Login</button>
+      </div>
+      
+      <div class="modal invisible">
+        <span id="salir" class="close"></span>
+      </div>
+      </div>
+      <section id="content">
+        <section class="left-menu">
+          <ul>
+            <li id="user">
+              <div class="img"></div>
+              <div class="description">
+                <h1 id="name"></h1>
+                <h4 id="depart"></h4>
+              </div>
+            </li>
+            <li id="primero">
+              <div class="animation"></div>
+              <!--<div class="img-menu"><img alt="Actividades" src="assets/online.svg"></div>-->
+              Actividades
+            </li>
+            <ul>
+              <li id="primeroAdd"><div class="animation"></div>New Actividades</li>
+              <li id="primeroEdit" class="disabled"><div class="animation"></div>Edit Actividades</li>
+              <li id="primeroRemove" class="disabled"><div class="animation"></div>Remove Actividades</li>
+            </ul>
+            <li id="segundo"><div class="animation"></div>Profesores</li>
+            <ul>
+                <li id="segundoAdd"><div class="animation"></div>New Profesores</li>
+                <li id="segundoEdit" class="disabled"><div class="animation"></div>Edit Profesores</li>
+                <li id="segundoRemove" class="disabled"><div class="animation"></div>Remove Profesores</li>
+              </ul>
+            <li id="tercero"><div class="animation"></div>Grupo</li>
+            <ul>
+                <li id="terceroAdd"><div class="animation"></div>New Grupo</li>
+                <li id="terceroEdit" class="disabled"><div class="animation"></div>Edit Grupo</li>
+                <li id="terceroRemove" class="disabled"><div class="animation"></div>Remove Grupo</li>
+              </ul>
+            <li id="dogout">Logout</li>
+          </ul>
+        </section>
+        <section class="content">
+          <h1 id="titulo"></h1>
+        </section>
+      </section>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/ajaxrequest.js"></script>
+    <script type="text/javascript" src="js/script-modal.js"></script>
+     <script type="text/javascript" src="js/validation.js"></script>
+  </body>
+</html>

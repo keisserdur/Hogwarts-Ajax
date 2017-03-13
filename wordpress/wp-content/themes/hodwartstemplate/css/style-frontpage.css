@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Vast+Shadow|Roboto+Slab:100,300');
+
+@font-face {
+    font-family: social;
+    src: url(../fonts/social.ttf);
+}
+
+/*
+    font-family: 'Playfair Display', serif;
+    font-family: 'Vast Shadow', cursive;
+    font-family: 'Roboto Slab', serif;
+*/
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+.front-page-container *{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    z-index: 1;
+}
+/*-----------------------------------------------------------------------------*/
+
+.front-page .main-img .menu-principal-web a{font-size: 1em;color: #ffffff;font-family: 'Playfair Display', serif;}
+.front-page .main-img .menu-principal-web p{ font-size: 2em;color: #ffffff;font-family: 'Vast Shadow', cursive;}
+
+.front-page .nav-principal-movil p {font-family: 'Playfair Display', serif;color: #e0c56e;}
+.front-page .menu-section * { font-family: 'Playfair Display', serif; }
+
+/*---SECTION 01---*/
+.front-page .section-01 h1{font-size: 1em;color: #ffffff;font-family: 'Playfair Display', serif;}
+.front-page .section-01 .p{font-size: 1.5em;color: #ffffff;font-weight: 100;}
+/*---SECTION 01---*/
+
+/*---SECTION 02---*/
+.front-page .section-02 .img h1{ color: #e0c56e; font-family: 'Playfair Display', serif; }
+.front-page .section-02 .img h2{ font-size: 3em; color: #fff; }
+.front-page .section-02 .img h3{ font-size: 1em; color: #e0c56e; font-family: 'Playfair Display', serif;}
+/*--SECTION 02---*/
+
+/*---FOOTER---*/
+.front-page .footerfp .logo .h1{ font-size: 1em;color: #000;font-family:'Vast Shadow',cursive; }
+.front-page .footerfp .location .container-hs .h1{ font-size: 0.9em;color: #000; }
+.front-page .footerfp .links .links-ul .h1 .p{font-size: 1.2em;color: #000000;}
+.front-page .footerfp .links .links-ul .h1 .a{ font-weight:100; }
+.front-page .footerfp .links .links-ul .h1 .a:hover{ color:#e0c56e }
+/*---FOOTER---*/
+
+/*------------------------------------------------------------------------------*/
+
+.front-page .main-img .background-black{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.menu-toggle.on .one {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.on .two {
+  opacity: 0;
+}
+
+.menu-toggle.on .three {
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 5px;
+  background: #e0c56e;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.front-page .menu-section nav ul {
+  text-align: center;
+}
+.front-page .menu-section nav ul.hidden {
+  display: none;
+}
+
+.front-page .menu-section li {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.front-page .menu-section li.logo {
+    display: flex;
+    color: #e0c56e;
+    align-items: center;
+}
+
+.front-page .menu-section a {
+  flex: 1 0 0;
+  transition-duration: 1s;
+  color: black;
+  background-color: #e0c56e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-page .menu-section a:hover {
+  background-color: #000000;
+  color: #d4af37;
+}
+
+.front-page .menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+}
+
+/*-----------------------------------------------------------------------------*/
+.front-page-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: #fff;
+}
+.front-page .main-img .menu-principal-web {
+    display: none;
+}
+/*-----------------------------------------------------------------------------*/
+
+.front-page .nav-principal-movil {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page .main-img .div-logo-movil {
+    /* background-color: azure; */
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page .main-img .carrucel-letras {
+    flex: 3 0 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.front-page .main-img .carrucel-letras p {
+    flex: 0 1 100%;
+    color: #ffffff;
+    background-color: rgba(212, 175, 55, 0.21);
+    text-align: left;
+    padding: 20px;
+}
+
+.front-page .main-img .carrucel-letras p.tlt *{
+  font-size: 20px;
+}
+
+.front-page .main-img .nav-principal { 
+    display: flex;
+    flex: 1 0 0;
+    justify-content: center;
+}
+
+.front-page .main-img .nav-principal .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Vast Shadow', cursive;
+}
+
+.front-page .main-img .nav-principal .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gruppo', cursive;
+    font-weight: 900;
+    color: black;
+    margin-left: 10px;
+}
+/*-----------------------------------------------------------------------------*/
+.front-page .main-img {
+    margin-top: 60px;
+    flex: 1 0 100%;
+    height: 500px;
+    background-image: url(../img/hogwarts-movil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.front-page .main-img .div-logo-movil p {
+    font-family: 'Vast Shadow', cursive;
+    border: 1px solid;
+    padding: 20px;
+    color: #fff;
+}
+
+.front-page .section-01 {
+    transition-duration: 1s;
+    flex: 1 0 100%;
+    background-color: rgb(224, 197, 110);
+    display: flex;
+    min-height: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+.front-page .section-01 .p {
+    transition-duration: 1s;
+}
+
+.front-page .section-01 h1 {
+    transition-duration: 1s;
+    margin-bottom: 50px;
+}
+.front-page .section-02 {
+    flex: 1 0 100%;
+}
+.front-page .section-02 .img-02 .background-black{
+  background-color: transparent;
+}
+.front-page .section-02 .background-black{
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    height: 100%;
+}
+.front-page .section-02 .background-black .container-hs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: #c90808; */
+    padding-left: 60px;
+}
+.front-page .section-02 .img h1{
+  margin-top: 40px;
+}
+.front-page .section-02 .img h2{margin: 10px 0px;}
+.front-page .section-02 .img h3{
+  
+}
+
+
+
+    
+    
+
+.front-page .section-02 .img{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.front-page .section-02 .img-02{    
+    background-image: url(../img/demiguise-movil.jpg);
+}
+
+.front-page .section-02 .img-01{
+    background-image: url(../img/lechuza-movil.jpg);
+}
+
+.front-page .section-03 {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/fondo-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+.front-page .section-03 .img-01{
+    position: relative;
+    flex: 1 0 0;
+    min-width: 90%;
+    background-image: url(../img/azkaban-movil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+
+
+.front-page .section-03 h2 {
+    font-size: 0.7em;
+    font-weight: 900;
+    letter-spacing: 5px;
+    /* background-color: #00ff98; */
+}
+
+.front-page .section-03 h1 {
+    font-size: 2em;
+    margin: 25px;
+    font-family: 'Crimson Text', serif;
+    /* background-color: #191c44; */
+}
+
+.front-page .section-03 p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    /* background-color: #ff04dd; */
+}
+
+
+
+.front-page .section-02 .img-01 p, .front-page .section-02 .img-02 p {
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------section-04-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.front-page .section-04{
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.front-page .section-04 .img{
+    flex: 1 0 500px;
+    width: 100%;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.front-page .section-04 .img-01{
+  /* background-color: #2306fe; */
+  background-image: url(../img/iilvermorny-movil.jpg);
+}
+.front-page .section-04 .img-02{
+  /* background-color: #06fe83; */
+  background-image: url(../img/beauxbatons-movil.jpg);
+}
+.front-page .section-04 .img-03{
+  /* background-color: #9d673f; */
+  background-image: url(../img/durmstrang-movil.jpg);
+}
+.front-page .section-04 .container-word{
+  background-color: rgba(0, 0, 0, 0.22);
+  width: 100%;
+  height: 500px;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.front-page .section-04 .container-word *{
+    color: #ffffff;
+}
+.front-page .section-04 .container-word .container-hs{
+    margin-bottom: 20px;
+}
+
+.front-page .section-04 .container-word .h1{
+  text-align: left;
+  font-size: 2.5em;
+  margin: 10px 0px;
+  font-family: 'Playfair Display', serif;
+}
+
+.front-page .section-04 .container-word .h2{
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.front-page .section-04 .container-word .h3{
+  background-color: rgb(224, 197, 110);
+  padding: 20px;
+  width: 199px;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------section-04-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*---------------------------------footer--------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.front-page .footerfp {
+  /* background-color: #fe0303; */
+  flex: 1 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.front-page .footerfp .logo{
+  /* background-color: #15ff00; */
+  flex: 1 0 100%;
+  display: flex;
+  justify-content:center;
+}
+
+.front-page .footerfp .logo .h1{
+  flex: 0 1 0;
+  border: 1px solid;
+  padding: 20px;
+  margin: 50px 0px;
+
+}
+
+.front-page .footerfp .links{
+  /* background-color: antiquewhite; */
+  display: none;
+  flex: 1 0 100%;
+  padding-left: 50px;
+  margin-bottom: 100px;
+}
+
+.front-page .footerfp .links .links-ul{
+  /* background-color: #b4731b; */
+  flex: 1 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-right: 50px;
+}
+
+.front-page .footerfp .links .links-ul .h1{display: flex;/* background-color: #ba3a3a; */flex: 1 0 100%;}
+
+.front-page .footerfp .links .links-ul .h1 .p{
+  text-align: left;
+  /* background-color: #2afe07; */
+  height: 30px;
+  flex: 1 0 0;
+}
+
+.front-page .footerfp .links .links-ul .h1 .a{
+  text-align: left;
+  color: black;
+  /* background-color: #f2baff; */
+  flex: 0 1 0;
+  height: 20px;
+}
+
+.front-page .footerfp .location{
+    flex: 1 0 100%;
+}
+
+.front-page .footerfp .location .container-hs{
+  padding: 0px 10%;
+}
+
+.front-page .footerfp .location .container-hs .h1{
+  margin-bottom: 10px;
+}
+.front-page .footerfp .social{
+  /* background-color: #de00ff; */
+  flex: 1 0 100%;
+}
+
+.front-page .footerfp .social .container-hs{
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+}
+.front-page .footerfp .social .container-hs .a{
+  /* padding: 20px; */
+  margin-left:10px;
+  color: #090909;
+  font-family: social;
+  font-size: 4em;
+  }
+.front-page .footerfp .social .container-hs .a-01:hover{color: #19197a;}
+.front-page .footerfp .social .container-hs .a-02:hover{
+    color: #24c9ce;
+}
+.front-page .footerfp .social .container-hs .a-03:hover{color: #12b94b;}
+.front-page .footerfp .social .container-hs .a-04:hover{color: red;}
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*---------------------------------footer--------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+
+@media screen and (min-width: 1000px){
+/*-----------------------menu------------------------------------------------------*/
+.front-page .main-img {
+    background-image: url(../img/hogwarts-web.jpg);
+}
+.front-page .main-img .menu-principal-web {
+    display: flex;
+    /* background-color: #c52626; */
+    height:70px;
+}
+.front-page .main-img .menu-principal-web li{
+    display: flex;
+    /* background-color: #1230df; */
+}
+.front-page .main-img .menu-principal-web a,
+.front-page .main-img .menu-principal-web p{
+  transition-duration: 1s;
+  display: flex;
+  flex: 1 0 0;
+  justify-content: center;
+  align-items:center;
+}
+.front-page .main-img .menu-principal-web a{
+  font-weight: 900;
+  /* background-color: #c63232; */
+  padding: 0px 30px;
+  margin-left: 20px;
+}
+
+.front-page .main-img .menu-principal-web a:hover{
+  background-color: rgba(212, 175, 55, 0.51);
+}
+.front-page .main-img .menu-principal-web p{
+    border: 1px solid;
+    padding: 0px 30px;
+}
+.front-page .main-img .space{
+  flex: 2 0 0;
+}
+.front-page .main-img .sapce-01{
+  flex: 1 0 0;
+}
+
+.front-page .main-img .carrucel-letras {
+  /* background-color:aqua; */
+}
+.front-page .main-img .carrucel-letras p{
+    flex-basis: 40%;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.front-page .main-img .carrucel-letras p.tlt * {
+  font-size: 30px;
+  text-align: left;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+  .front-page .nav-principal-movil{
+    display:none;
+  }
+
+  .menu-section{
+    display: none;
+  }
+
+   .menu-section.on{
+    display: none;
+  }
+
+  .front-page .main-img {
+    margin-top: 0px;
+    height: 100%;
+  }
+
+  .front-page .section-01, .front-page .section-02{
+    flex-basis: 0px;
+  }
+  .front-page .section-01{
+    min-height: 900px;
+    justify-content: center;
+    padding: 0px;
+  }
+  .front-page .section-01 h1 {
+    font-size: 2.5em;
+  }
+
+  .front-page .section-01 .p{
+    font-size: 2.5em;
+    margin: 0px 90px;
+  }
+ 
+  .front-page .main-img .div-logo-movil{
+    display:none;
+  }
+  /*---SECTION 02---*/
+  .front-page .section-02 .img{
+      height: 450px;
+  }
+  /*---SECTION 02---*/
+  /*-----------------------------------------------------------------------------*/
+  /*--------------------------------section-03-----------------------------------*/
+  /*-----------------------------------------------------------------------------*/
+    .front-page .section-03 *{
+      padding: 0px;
+      margin: 0px;
+      font-size: 16px;
+    }
+    .front-page .section-03 .letras *{
+      padding: 0px;
+      margin: 0px;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .front-page .section-03{
+      height: 1000px;
+      flex-direction: row;
+      padding: 0px;
+    }
+
+    .front-page .section-03 .letras{
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 0;
+      margin-left: 8%;
+      margin-right: 18%;
+    }
+
+    .front-page .section-03 .letras h1{
+      font-size: 5em;
+      margin: 55px 0px;
+    } 
+       
+    .front-page .section-03 .letras h2{
+
+    } 
+       
+    .front-page .section-03 .letras p{
+      font-size: 2em;
+    } 
+       
+    .front-page .section-03 .img-01{
+      height: 90%;
+      margin: 0px;
+      min-width: 0px;
+    }
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------section-03-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------section-04-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.front-page .section-04{flex-direction: row;}
+
+.front-page .section-04 .img{flex: 1 0 0;height: 700px;display: flex;justify-content: center;align-items: center;}
+
+.front-page .section-04 .img-01{
+  background-image: url(../img/iilvermorny-web.jpg);
+}
+
+.front-page .section-04 .img-02{
+    background-image: url(../img/beauxbatons-web.jpg);
+}
+
+.front-page .section-04 .img-03{
+  background-image: url(../img/durmstrang-web.jpg);
+}
+
+.front-page .section-04 .container-word{
+    padding-top: 200px;
+    height: 100%;
+}
+
+.front-page .section-04 .container-word .h1{font-size: 3em;margin: 64px 0px;}
+
+.front-page .section-04 .container-word .h2{
+}
+
+.front-page .section-04 .container-word .h3{}
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------section-04-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*---------------------------------footer--------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.front-page .footerfp {
+  flex: 1 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.front-page .footerfp .logo{
+  flex: 1 0 100%;
+  justify-content: flex-start;
+}
+
+.front-page .footerfp .logo .h1{margin: 50px 0px 50px 50px;font-size: 1.5em;}
+
+.front-page .footerfp .links{
+  display: flex;
+}
+
+.front-page .footerfp .location{
+    flex: 2 0 0;
+    /* background-color: red; */
+}
+
+.front-page .footerfp .location .container-hs{padding: 0px 50px;}
+
+.front-page .footerfp .location .container-hs .h1{
+  text-align: left;
+  margin: 0px;
+}
+.front-page .footerfp .social{
+  flex: 1 0 0;
+  justify-content: flex-start;
+}
+
+.front-page .footerfp .social .container-hs{
+    margin: 0px 0px 100px 0px;
+    justify-content: flex-end;
+}
+.front-page .footerfp .social .container-hs .a{
+  font-size: 4em;
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+}
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*---------------------------------footer--------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+}
+@media screen and (min-width: 1500px){
+    .front-page .section-03 .letras h1{
+      font-size: 9em;
+    }
+}

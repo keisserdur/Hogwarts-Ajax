@@ -1,0 +1,11 @@
+wget https://es.wordpress.org/wordpress-4.7.1-es_ES.tar.gz
+
+Cambiamos el nombre al tar
+
+tar -zxvf latest.tar.gz
+
+akismet : e579ce84ffc2
+
+
+User backend WP => actividades
+Pass backend WP => expecto patronum

@@ -1,0 +1,153 @@
+/*
+    font-family: 'Playfair Display', serif;
+    font-family: 'Vast Shadow', cursive;
+    font-family: 'Roboto Slab', serif;
+*/
+.nav-logo {
+    display: none;
+}
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.search *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    z-index: 1;
+}
+
+
+
+
+
+
+/*------------------------------FONT-------------------------------------------*/
+.search .nav-search .nav-logo{font-size: 1.5em;font-family: 'Vast Shadow', cursive;color:white;}
+.search .nav-search .nav-link{font-size: 0.8em;font-family: 'Playfair Display', serif;}
+.search .img-background .container-hs h1{font-size: 3em;color:white;}
+.search .img-background .container-hs h2{font-size: 3em;font-weight: 100;color:#ffffff;}
+/*------------------------------FONT-------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------NAV-------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.search .img-background {
+    /*background-color: #d31414;*/
+    height: 300px;
+    background-image: url(../img/search.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.search .img-background .container-hs {
+    background-color: rgba(193, 129, 86, 0.13);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-self: center;
+}
+.blank-shadow {
+    background-color: rgba(73, 7, 7, 0.26);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+.search .nav-search {
+    /* background-color: #8fff00; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.search .nav-search *{
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search .nav-search .blank {
+    /* background-color: #413f75; */
+    flex-grow: 3;
+}
+
+.search .nav-search .blank-02 {
+    flex-grow: 12;
+}
+
+.search .nav-search .nav-logo {
+    border: 1px solid;
+    /* background-color: #ff12dc; */
+}
+
+.search .nav-search .nav-link{
+    color: #ffffff;
+    /* background-color: #7c2525; */
+    margin-left: 10px;
+    flex-basis: 100px;
+    transition-duration: 1s;
+}
+
+.search .nav-search .nav-link:hover {
+    background-color: rgba(199, 100, 20, 0.4);
+}
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*------------------------------NAV--------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------SEARCH-POST-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.search .container-search-post {
+    background-color: #87d282;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------SEARCH-POST-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .search .nav-search{
+        padding: 20px 10px;
+    }
+    .search .nav-search .blank{
+        display:none;
+    }
+    .search .nav-search .nav-logo{
+        flex-basis: 100%;
+    }
+    .search .nav-search .nav-link{
+        margin: 20px 0px;
+    }
+    .search .img-background .container-hs{
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+    .search .img-background .container-hs h1{
+        font-size: 2em;
+    }
+    .search .img-background .container-hs h2{
+        font-size: 2em;
+    }
+
+}
+

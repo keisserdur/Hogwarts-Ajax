@@ -1,0 +1,365 @@
+/* reset*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*-------------------------------------------------------------*/
+/*----------------ESTILOS GENERICOS----------------------------*/
+/*-------------------------------------------------------------*/
+body,html,#wrapper{
+    width: 100%;
+    height: auto;
+}
+*{
+    font-family: Raleway !important;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color:rgb(136, 137, 139);
+}
+.imgGenericoFlex{
+    width: 100%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.flexCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------------------------*/
+/*-----------------------------HEAD----------------------------*/
+/*-------------------------------------------------------------*/
+
+#backgroundHeader{
+    min-height: 500px;
+    background-image: url(img/fondo.jpg);
+}
+
+nav{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+nav .links{
+    display: flex;
+    flex-direction: row;
+    
+}
+nav .links li{
+    padding-left: 50px;
+}
+#primerLink{
+    padding-left:0px;
+}
+links li:hover{
+    background-color: grey;
+} 
+.separador{
+     margin-top: 5%;
+     width: 90%;
+     border-bottom: 1px solid #bababa;
+}
+/*-------------------------------------------------------------*/
+/*-------------------POST DESTACADO----------------------------*/
+/*-------------------------------------------------------------*/
+
+.postDestacado{
+    margin-top: 4%;
+    width: 90%;
+    min-height: 800px; 
+    max-height: 800px;
+    /*background-image: url(img/destacado.jpg);*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-position:20% 10% !important;
+}
+.cajaPostDestacado{
+    width: 50%;
+    min-width: 300px;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.88);
+    display: flex;
+    flex-direction: column; 
+}
+/*---------CABECERA POST DESTACADO*/
+.cabeceraPostDestacado{
+    height: 50px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-bottom:1px solid #d6cfcf; 
+}
+.tipoPost{
+    flex: 1 1 50%;
+    height: 100%;
+    justify-content: flex-start !important; 
+}
+.tipoPost p{
+    margin-left: 10%;
+    font-weight: 600!important;
+}
+.botones{
+   flex: 1 1 50%;
+   height: 100%;
+   justify-content: flex-end !important; 
+}
+.botones a{
+    background-color: #283037;
+    width: 14%;
+    height: 100%;
+    display: flex;
+    border-left:solid 1px rgba(255, 255, 255, 0.15);
+    justify-content: center;
+    align-items: center;
+}
+.botones a:hover{
+    background-color: rgba(40, 48, 55, 0.89);
+}
+/*---------CONTENIDO POST DESTACADO*/
+
+.contenidoPostDestacado{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+.postDestacadoTitulo{
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.postDestacadoInfoAutor{
+    width: 82.4%;
+    margin-top: 4%;
+    height: 6%;
+    align-self: center;
+    justify-content: flex-start;
+    display: flex;
+}
+.info{
+    color:#66727D;
+    margin-left: 4px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+.info{
+    border-left:1px solid rgba(0, 0, 0, 0.23);
+}
+.fotoPostDestacado{
+    background-image: url(img/harry.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3%;
+}
+.postDestacadoExcerpt{
+    line-height: 32px;
+    margin-top: 4%;
+    border-top: 1px solid rgba(0, 0, 0, 0.23);
+    width:90%;
+    text-align: justify;
+}
+.postDestacadoExcerpt p{
+    margin-top: 3%;
+    max-width: 80%;
+    margin-left: 10%;
+}
+.readMore{
+    margin-top: 3%;
+    align-self: center;
+}
+.readMore a:hover{
+    color: rgb(67, 77, 87)!important;
+}
+.uno{
+    background-image: url(img/1.jpg);
+    height: 50%;
+    width: 90%;
+}
+.dos{
+    background-image: url(img/2.jpg);
+    height: 50%;
+    width: 90%;
+}
+.tres{
+    background-image: url(img/3.jpg);
+    height: 50%;
+    width: 90%;
+}
+.cuatro{
+    background-image: url(img/4.jpg);
+    height: 50%;
+    width: 90%;
+}
+/*-------------------------------------------------------------*/
+/*----------------CONTAINER POST-------------------------------*/
+/*-------------------------------------------------------------*/
+.containerPosts{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+    margin-top: 5%;
+    
+}
+.post{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    min-width:600px;
+    margin-top: 5%; 
+}
+.izquierda{
+    margin-top: -1%;
+}
+/*----------Imagenes Post*/
+.pIzquierdaFoto{
+    background-image: url(img/pizquierda.jpg);
+    height: 50%;
+    width: 90%;
+}
+.pDerechaFoto{
+    background-image: url(img/pderecha.jpg);
+    height: 60%;
+    width: 90%;
+}
+/*----------InfoPost*/
+.infoPostGeneric{
+    width: 80%;
+    background-color: white;
+    margin-top: -6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:1000px){
+    /*POST DESTACADO*/
+    .cajaPostDestacado {
+       width: 90%;
+       margin-right: 5%;
+       align-self: flex-end;
+       margin-bottom: 5%;
+       transition:all 2s;
+    }
+}
+@media screen and (max-width:800px){
+     /*POST GENERICO*/
+    .post{
+            min-width: 400px;
+            transition:all 2s;
+    }
+    .containerPosts{
+        width: inherit;
+    }
+    .infoPostGeneric postDestacadoInfoAutor{
+        margin-bottom: 8%;
+    }
+    .post:not(:first-child){
+            margin-top: 15%;
+    }
+    .postDestacadoInfoAutor{
+        margin-bottom: 10%;
+    }
+}
+@media screen and (max-width:500px){
+    /*POST DESTACADO*/
+    
+     .postDestacado{
+        align-items: flex-end;
+        min-height: 500px;
+        min-width: 200px;
+        transition:all 2s;
+    }
+    .postDestacadoExcerpt{
+        width:100%;
+    }
+    .postDestacadoExcerpt p{
+        margin-left:0%;
+        max-width:100%;
+    }
+     .cajaPostDestacado{
+        width: 90%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        min-width: 200px;
+         transition:all 2s;
+    }
+    .postDestacadoTitulo{
+        font-size: 14px;
+    }
+    .postDestacadoInfoAutor{
+        width: 100%;
+        font-size: 14px;
+    }
+    .postDestacado .postDestacadoExcerpt{
+        display: none;
+    }
+    .postDestacado .cajaPostDestacado .readMore{
+        display: none;
+    }
+    /*POST GENERICO*/
+    .post{
+        transition:all 2s;
+            min-width: 350px;
+    }
+    .pDerechaFoto{
+        height: 33%;
+        width: 80%;
+        transition:all 2s;
+    }
+    .pIzquierdaFoto{
+         height: 33%;
+        width: 80%;
+        transition:all 2s;
+    }
+    .postDestacadoTitulo{
+        margin-left: 6%;
+    }
+    .readMore {
+        margin-top: 3%;
+        margin-left: -16%;
+    }
+    .infoPostGeneric{
+        margin-top:0%;
+    }
+}

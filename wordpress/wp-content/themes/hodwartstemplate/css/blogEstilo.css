@@ -1,0 +1,449 @@
+/* reset*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*-------------------------------------------------------------*/
+/*----------------ESTILOS GENERICOS----------------------------*/
+/*-------------------------------------------------------------*/
+.fran body,html{
+    width: 100%;
+    height: auto;
+}
+.fran *{
+    font-family: Raleway !important;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+}
+
+.fran ol,ul{
+    list-style: none;
+}
+.fran a{
+    text-decoration: none;
+    color: black;
+}
+.fran a:visited{
+    color: black;
+}
+.fran a:hover{
+    color:rgb(136, 137, 139);
+}
+.fran .imgGenericoFlex{
+    width: 100%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.archiveFran .show{
+    text-align:center !important;
+      z-index: 1;
+    font-size: 2.6em;
+    color: #fff9f0;
+}
+.archiveFran .slide{
+    min-height:700px;
+    width:100%;
+}
+.fran .show div{
+    margin-top: 10%;
+}
+.fran .flexCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fran .titlePost{
+    text-align: center;
+    font-size: 2.6em;
+    color: #fcba60;
+    text-align: center;
+    margin-top:-10px;
+    cursor: pointer;
+}
+.fran .alinearTextoCentro{
+    text-align: center;
+}
+.fran .titlePost:hover{
+    color:#5a5555;
+}
+.fran .containerGenericoPost{
+  margin-top: 100px;
+  margin-bottom: 50px;       
+}
+.fran .infoPost{
+        display: inline-flex;
+}
+.fran .infoPost li{
+    margin-left: 20px;
+    font-family: Raleway;
+}
+.fran .infoPost li span{
+    margin-top:-2%
+}
+.head{
+    width: 100%;
+}
+/*-------------------------------------------------------------*/
+/*-----------------------------HEAD----------------------------*/
+/*-------------------------------------------------------------*/
+
+.fran #backgroundHeader{
+    min-height: 500px;
+}
+
+.archiveFran myCarouselArchive {
+    min-height: 800px;
+    width: 100%;
+}
+.fran nav{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+    background-color:white;
+}
+.fran .more{
+    display:none;
+}
+.fran nav .links{
+    display: flex;
+    flex-direction: row;
+    
+}
+.unoLink,.dosLink{
+    padding-right: 34px;
+}
+.fran nav .links li{
+    padding-left: 50px;
+}
+.fran #primerLink{
+    padding-left:0px;
+}
+.fran links li:hover{
+    background-color: grey;
+} 
+.fran .separador{
+     margin-top: 5%;
+     width: 90%;
+     border-bottom: 1px solid #bababa;
+}
+/*-------------------------------------------------------------*/
+/*-------------------POST DESTACADO----------------------------*/
+/*-------------------------------------------------------------*/
+
+.fran .postDestacado{
+    margin-top: 4%;
+    width: 90%;
+    min-height: 800px; 
+    max-height: 800px;
+    /*background-image: url(img/destacado.jpg);*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.fran .cajaPostDestacado{
+    width: 50%;
+    min-width: 300px;
+    height: 61%;
+    max-height: 600px;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.88);
+    display: flex;
+    flex-direction: column; 
+}
+/*---------CABECERA POST DESTACADO*/
+.fran .cabeceraPostDestacado{
+    height: 90px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-bottom:1px solid #d6cfcf; 
+}
+.infoPost{
+    display:flex;
+}
+.fran .tipoPost{
+    flex: 1 1 50%;
+    height: 100%;
+    justify-content: flex-start !important; 
+}
+.fran .tipoPost p{
+    margin-left: 10%;
+    font-weight: 600!important;
+}
+.fran .botones{
+   flex: 1 1 50%;
+   height: 100%;
+   justify-content: flex-end !important; 
+}
+.fran .botones a{
+    background-color: #283037;
+    width: 14%;
+    height: 100%;
+    display: flex;
+    border-left:solid 1px rgba(255, 255, 255, 0.15);
+    justify-content: center;
+    align-items: center;
+}
+.fran .botones a:hover{
+    background-color: rgba(40, 48, 55, 0.89);
+}
+/*---------CONTENIDO POST DESTACADO*/
+.impar{
+    height:60%!important;
+}
+.par{
+    margin-top:-10% !important;
+}
+.fran .contenidoPostDestacado{
+   max-height: 90%;
+    width: 80%;
+        margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+.fran .postDestacadoTitulo{
+   font-size: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.fran .postDestacadoInfoAutor{
+    width: 82.4%;
+    margin-top: 4%;
+    height: 20px;
+    align-self: center;
+    justify-content: flex-start;
+    display: flex;
+}
+.fran .info{
+    color:#66727D;
+    margin-left: 4px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+.fran .info{
+    border-left:1px solid rgba(0, 0, 0, 0.23);
+}
+.fran .fotoPostDestacado{
+    background-image: url(img/harry.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3%;
+}
+.fran .postDestacadoExcerpt{
+    line-height: 32px;
+    margin-top: 4%;
+    border-top: 1px solid rgba(0, 0, 0, 0.23);
+    width:90%;
+    text-align: justify;
+}
+.fran .postDestacadoExcerpt p{
+    margin-top: 3%;
+    max-width: 80%;
+    margin-left: 10%;
+}
+.fran .readMore{
+    margin-top: 3%;
+    align-self: center;
+}
+.fran .readMore a:hover{
+    color: rgb(67, 77, 87)!important;
+}
+.fran .uno{
+    background-image: url(img/1.jpg);
+    height: 50%;
+    width: 90%;
+}
+.fran .dos{
+    background-image: url(img/2.jpg);
+    height: 50%;
+    width: 90%;
+}
+.fran .tres{
+    background-image: url(img/3.jpg);
+    height: 50%;
+    width: 90%;
+}
+.fran .cuatro{
+    background-image: url(img/4.jpg);
+    height: 50%;
+    width: 90%;
+}
+/*-------------------------------------------------------------*/
+/*----------------CONTAINER POST-------------------------------*/
+/*-------------------------------------------------------------*/
+.fran .containerPosts{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+    margin-top: 5%;
+    
+}
+.fran .post{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    min-width:600px;
+    margin-top: 5%; 
+}
+.fran .izquierda{
+    margin-top: -1%;
+}
+/*----------Imagenes Post*/
+.fran .containerPosts:nth-child(even) .foto{
+    height: 50%;
+    width: 90%;
+}
+.fran .containerPosts:nth-child(odd) .foto{
+    height: 60% !important;
+    width: 90%;
+}
+.infoPost li{
+    margin-left: 13px;
+}
+/*----------InfoPost*/
+.fran .infoPostGeneric{
+    width: 80%;
+    background-color: white;
+    margin-top: -12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fran{
+       display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@media screen and (max-width:1000px){
+    /*POST DESTACADO*/
+ .fran    .cajaPostDestacado {
+       width: 90%;
+       margin-right: 5%;
+       align-self: flex-end;
+       margin-bottom: 5%;
+       transition:all 2s;
+    }
+}
+@media screen and (max-width:800px){
+     /*POST GENERICO*/
+.fran     .post{
+            min-width: 400px;
+            transition:all 2s;
+    }
+ .fran    .containerPosts{
+        width: inherit;
+    }
+ .fran    .infoPostGeneric postDestacadoInfoAutor{
+        margin-bottom: 8%;
+    }
+ .fran    .post:not(:first-child){
+            margin-top: 15%;
+    }
+ .fran    .postDestacadoInfoAutor{
+        margin-bottom: 10%;
+    }
+}
+@media screen and (max-width:500px){
+    /*POST DESTACADO*/
+    
+  .fran    .postDestacado{
+            align-items: flex-end;
+    min-height: 500px;
+    min-width: 200px;
+    margin-top: 96px;
+    margin-bottom: 113px;
+    transition: all 2s;
+    }
+  .fran   .postDestacadoExcerpt{
+        width:100%;
+    }
+ .fran    .postDestacadoExcerpt p{
+        margin-left:0%;
+        max-width:100%;
+    }
+    .fran .cabeceraPostDestacado {
+    height: 46px;
+}
+   .fran   .cajaPostDestacado{
+           height: inherit;
+        width: 90%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        min-width: 200px;
+         transition:all 2s;
+    }
+  .fran   .postDestacadoTitulo{
+        font-size: 14px;
+    }
+  .fran   .postDestacadoInfoAutor{
+           width: 100%;
+    margin-top: 29px;
+    font-size: 14px;
+       margin-bottom: 14px;
+    }
+ .fran    .postDestacado .postDestacadoExcerpt{
+        display: none;
+    }
+  .fran   .postDestacado .cajaPostDestacado .readMore{
+        display: none;
+    }
+    /*POST GENERICO*/
+ .fran    .post{
+        transition:all 2s;
+            min-width: 350px;
+    }
+ .fran    .pDerechaFoto{
+        height: 33%;
+        width: 80%;
+        transition:all 2s;
+    }
+  .fran   .pIzquierdaFoto{
+         height: 33%;
+        width: 80%;
+        transition:all 2s;
+    }
+ .fran    .postDestacadoTitulo{
+        margin-left: 6%;
+    }
+   .fran  .readMore {
+        margin-top: 3%;
+        margin-left: -16%;
+    }
+ .fran    .infoPostGeneric{
+        margin-top:0%;
+    }
+.postDestacado .infoPost{
+        display:none;
+    }
+    .impar{
+        height:40% !important;
+    }
+}
